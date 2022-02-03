@@ -25,7 +25,7 @@ public class LocationTest {
     @Test
     public void test_get_y_position(){
         Location testLocation = new Location();
-        testLocation.setYPosition(5);
+        testLocation.setYPosition(4);
         testLocation.getYPosition();
         assertEquals(4, testLocation.getYPosition(),
                 "The expected y position was wrong");
