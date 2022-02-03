@@ -5,10 +5,11 @@ public class Location {
     public int xPosition;
     public int yPosition;
     //Constructor-------------------------------------------------
-    public Location (int xAxis, int yAxis){
-        this.xPosition=xAxis;
-        this.yPosition=yAxis;
-    }
+
+//    public Location (int xAxis, int yAxis){
+//        this.xPosition=xAxis;
+//        this.yPosition=yAxis;
+//    }
 
     //Methods-----------------------------------------------------
     public int getXPosition(){
@@ -25,5 +26,10 @@ public class Location {
 
     public void setYPosition(int newYPosition){
         yPosition = newYPosition;
+    }
+
+    public void stayStill(){
+        yPosition = yPosition;
+        xPosition = xPosition;
     }
 }
