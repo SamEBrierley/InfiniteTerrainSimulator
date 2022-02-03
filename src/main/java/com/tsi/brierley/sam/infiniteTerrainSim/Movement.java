@@ -3,17 +3,12 @@ import com.tsi.brierley.sam.infiniteTerrainSim.Location;
 
 public class Movement {
     //Attributes --------------------------------------
-    enum Direction{
-        UP,
-        DOWN,
-        LEFT,
-        RIGHT
-    }
+
 
     Location location = new Location();
     //Constructor -------------------------------------
     public Movement(String move){
-        Direction newMove = Direction.valueOf(move);
+        Directions newMove = Directions.valueOf(move);
         switch(newMove){
             case UP:
                 location.setYPosition(location.getYPosition()+1);
