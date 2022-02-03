@@ -37,15 +37,15 @@ public class LocationTest {
                 "The expected y position was wrong");
     }
 
-    @Test
-    public void test_staying_still(){
-        Location testLocation = new Location();
-        testLocation.setXPosition(5);
-        testLocation.setYPosition(5);
-        testLocation.stayStill();
-        assertEquals(5, testLocation.getXPosition(),
-                "The expected x position was wrong");
-        assertEquals(5, testLocation.getYPosition(),
-                "The expected y position was wrong");
-    }
+//    @Test
+//    public void test_staying_still(){
+//        Location testLocation = new Location();
+//        testLocation.setXPosition(5);
+//        testLocation.setYPosition(5);
+//        testLocation.stayStill();
+//        assertEquals(5, testLocation.getXPosition(),
+//                "The expected x position was wrong");
+//        assertEquals(5, testLocation.getYPosition(),
+//                "The expected y position was wrong");
+//    }
 }
