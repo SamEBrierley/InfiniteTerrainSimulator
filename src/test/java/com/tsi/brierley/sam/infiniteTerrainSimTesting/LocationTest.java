@@ -8,6 +8,7 @@ public class LocationTest {
     @Test
     public void test_get_x_position(){
         Location testLocation = new Location();
+        testLocation.setYPosition(4);
         testLocation.getXPosition();
         assertEquals(4, testLocation.getXPosition(),
                 "The expected x position was wrong");
@@ -24,6 +25,7 @@ public class LocationTest {
     @Test
     public void test_get_y_position(){
         Location testLocation = new Location();
+        testLocation.setYPosition(5);
         testLocation.getYPosition();
         assertEquals(4, testLocation.getYPosition(),
                 "The expected y position was wrong");
@@ -37,15 +39,15 @@ public class LocationTest {
                 "The expected y position was wrong");
     }
 
-//    @Test
-//    public void test_staying_still(){
-//        Location testLocation = new Location();
-//        testLocation.setXPosition(5);
-//        testLocation.setYPosition(5);
-//        testLocation.stayStill();
-//        assertEquals(5, testLocation.getXPosition(),
-//                "The expected x position was wrong");
-//        assertEquals(5, testLocation.getYPosition(),
-//                "The expected y position was wrong");
-//    }
+    @Test
+    public void test_staying_still(){
+        Location testLocation = new Location();
+        testLocation.setXPosition(5);
+        testLocation.setYPosition(5);
+        testLocation.stayStill();
+        assertEquals(5, testLocation.getXPosition(),
+                "The expected x position was wrong");
+        assertEquals(5, testLocation.getYPosition(),
+                "The expected y position was wrong");
+    }
 }
